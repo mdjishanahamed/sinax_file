@@ -1,0 +1,810 @@
+/*GOOGLE FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+ul{
+    list-style: none;
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: 700;
+}
+
+
+p{
+    font-weight: 400;
+}
+
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+button:focus {
+	outline: 0;
+}
+
+.bg_cover{
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+.custom-container{
+	padding: 0 70px;
+}
+
+.clr{
+    clear: both;
+}
+
+/*all buttons style here*/
+.theme_btn {
+	background: #f26957;
+	padding: 20px 55px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+
+/*All Section Title Style is Here*/
+.section_title{
+	text-align: center;
+}
+
+.section_title h6 {
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #878787;
+	padding-bottom: 10px;
+	line-height: 1;
+}
+
+.section_title h2 {
+	font-size: 40px;
+	font-weight: 700;
+	color: #222;
+	padding-bottom: 11px;
+	line-height: 1;
+}
+
+.section_title p{
+	font-size: 14px;
+	font-weight: 400;
+	color: #666666;
+}
+
+body.overflow_active{
+    overflow-y: hidden;
+}
+
+/*END OF COMMON CSS*/
+
+
+
+/*=========================
+ 02.HEADER AREA CSS START
+===========================*/
+.main_menu {
+	background: rgba(0, 0, 0, .5);
+	padding: 0 70px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 999999999;
+}
+
+
+.menu_items {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.main_menu .navbar-nav {
+    transform: translateX(100%);
+	transition: all .3s linear;
+}
+
+.navbar-nav.menu_active {
+    transition: all .3s linear;
+    transform: translateX(0);
+}
+
+
+
+
+.main_menu .navbar-nav{}
+
+.main_menu .navbar-nav .nav-item{}
+
+.main_menu .navbar-nav .nav-item .nav-link {
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #fff;
+	padding: 50px 15px;
+    transition: all .3s linear;
+}
+
+.main_menu .navbar-nav .nav-item.active .nav-link,
+.main_menu .navbar-nav .nav-item .nav-link:hover{
+ color: #f26957;
+}
+
+.toggle_bars button {
+	background: transparent;
+	border: 0;
+	color: #fff;
+	font-size: 16px;
+}
+
+/*=========================
+ 02.HEADER AREA CSS END
+===========================*/
+
+
+
+/*=======================
+03.BANNER AREA CSS START
+=========================*/
+.banner_area{
+ position: relative;
+}
+
+.slider_active{}
+
+.single_slide{
+ height: 100vh;
+}
+
+.banner_overlay{
+ background: rgba(0, 0, 0, .4);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.slider_content {
+ padding-top: 347px;
+ padding-bottom: 247px;
+}
+
+.slider_content h4 {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.slider_content h1 {
+	color: #fff;
+	font-size: 92px;
+ padding-top: 40px;
+ padding-bottom: 50px;
+}
+
+/*SLIDER-BUTTON*/
+.left_btn, .right_btn {
+	position: absolute;
+	top: 50%;
+	/* left: 0; */
+	width: 50px;
+	height: 50px;
+	background-color: transparent;
+	z-index: 999;
+	font-size: 40px;
+	color: #fff;
+	line-height: 40px;
+}
+
+.left_btn {
+	left: 70px;
+	border: 0;
+	border-left: 3px solid #fff;
+}
+.right_btn {
+	right: 70px;
+	border: 0;
+	border-right: 3px solid #fff;
+}
+
+
+
+/*=======================
+03.BANNER AREA CSS END
+=========================*/
+
+
+
+/*=======================
+04.ABOUT AREA CSS START
+=========================*/
+.about_area{}
+
+.single_about{}
+
+.about_img {}
+
+.about_img img{
+	width: 100%;
+}
+
+.about_text{}
+
+.about_text h4{
+	font-weight: 700;
+	font-size: 20px;
+	color: #222;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+.about_text p{
+	font-weight: 400;
+	font-size: 14px;
+	color: #666;
+	
+}
+
+.about_read a{
+	font-weight: 700;
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #444;
+}
+
+
+/*=======================
+04.ABOUT AREA CSS END
+=========================*/
+
+
+
+/*==========================
+05.SERVICE AREA CSS START
+============================*/
+.service_area{
+	background: #f6f6f6;
+}
+
+.single_service{
+	background: #fff;
+	padding-left: 40px;
+	padding-bottom: 60px;
+	transition: all .3s linear;
+}
+
+.single_service:hover{
+	box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, .2);
+}
+
+.service_img{
+	padding-top: 60px;
+}
+
+.service_img img{
+/*	width: 100%;*/
+}
+
+.service_text{}
+
+.service_text h4{
+	font-weight: 700;
+	font-size: 19px;
+	color: #000;
+	padding-top: 25px;
+	padding-bottom: 20px;
+	line-height: 1;
+}
+
+.service_text span{
+	font-weight: 400;
+	font-size: 14px;
+	color: #666;
+	
+}
+
+/*==========================
+05.SERVICE AREA CSS END
+============================*/
+
+
+
+/*==========================
+06. WORK AREA CSS START
+============================*/
+.work_area{}
+
+.work_area .section_title h2 {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.work_gal{
+/*	text-align: right;*/
+}
+
+.work_gal button {
+	background: transparent;
+	border: 0;
+	font-size: 14px;
+	color: #888;
+	margin-left:25px;
+	transition: all .3s linear;
+}
+
+.work_gal button:nth-of-type(1){
+	color: #f26957;
+}
+
+/*.work_gal button.btn_active,*/
+.work_gal button:hover{
+	color: #f26957;
+}
+
+
+.single_work{
+	position: relative;
+}
+
+/*
+.single_work .work_img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+*/
+
+.single_work .work_overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .8);
+	opacity: 0;
+	visibility: hidden;
+	transition: all .3s linear;
+}
+
+.single_work:hover .work_overlay{
+	opacity: 1;
+	visibility: visible;
+}
+
+.single_work .work_overlay .work_text {
+	position: absolute;
+	left: 15%;
+	top: 70%;
+}
+
+.single_work .work_overlay .work_text h6{
+	color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.single_work .work_overlay .work_text span{
+	color: #cecece;
+	font-size: 11px;
+	font-weight: 400;
+}
+
+.single_work .work_overlay .work_icon{
+	position: absolute;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	padding-top: 30px;
+	padding-left: 30px;
+/*	z-index: 999999;*/
+}
+
+.work_icon i{
+	color: #fff;
+}
+
+
+/*==========================
+06. WORK AREA CSS END
+============================*/
+
+
+
+/*==========================
+06. COUNTER-UP CSS START
+============================*/
+
+.counter_up{
+	background: #333333;
+	padding: 100px 0;
+}
+
+.count{}
+
+.count h2{
+	font-size: 14px;
+	font-weight: 400;
+	color: #d8d8d8;
+	padding-top: 30px;
+}
+
+.counter{
+	font-size: 40px;
+	font-weight: 700;
+	color: #fff;
+	position: relative;
+}
+
+
+.counter::before {
+	position: absolute;
+	content: '';
+	left: 30%;
+	bottom: -20%;
+	width: 30px;
+	height: 2px;
+	background: #f26957;
+}
+
+
+/*==========================
+06. COUNTER-UP CSS END
+============================*/
+
+
+/*==========================
+06. STUFF AREA CSS START
+============================*/
+.stuff_area{}
+
+.stuff_wrap{}
+
+.single_stuff{
+	position: relative;
+}
+
+.single_stuff .stuff_overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .8);
+	opacity: 0;
+	visibility: hidden;
+	transition: all .3s linear;
+/*	transform: translateY(-100%);*/
+}
+
+.single_stuff:hover .stuff_overlay{
+	opacity: 1;
+	visibility: visible;
+/*	transform: translateY(0);*/
+}
+
+.stuff_icon {
+	position: absolute;
+	text-align: center;
+	/* left: 3%; */
+	top: 65%;
+	padding: 0px 42px;
+}
+
+.stuff_icon p{
+	color: #d1cfcc;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.stuff_icon span a {
+	color: #010101;
+	background: #fff;
+	border-radius: 50%;
+	padding: 9px 14px;
+	font-size: 15px;
+	font-weight: 400;
+	transition: all .3s linear;
+}
+
+.stuff_icon span a:hover{
+	color: #fff;
+	background: #f26957;
+}
+
+.stuff_text{
+	text-align: center;
+}
+
+.stuff_text h5{
+	font-size: 22px;
+	font-weight: 400;
+	color: #313131;
+	padding-top: 38px;
+}
+
+.stuff_text span{
+	font-size: 14px;
+	font-weight: 400;
+	color: #222222;
+}
+
+
+/*==========================
+06. STUFF AREA CSS END
+============================*/
+
+
+
+/*=====================================
+    07.COMPANY DESIGN AREA CSS START
+=======================================*/
+
+.design_text {
+	padding: 79.5px 100px;
+	background: #f6f6f6;
+}
+
+.design_text p {
+	font-weight: 400;
+	font-size: 14px;
+	color: #666666;
+}
+
+/*=====================================
+    07.COMPANY DESIGN AREA CSS END
+=======================================*/
+
+
+
+/*=========================================
+ 08.OUR LATEST NEWS DESIGN AREA CSS START
+===========================================*/
+
+.latest_news{
+ background: #f6f6f6;
+}
+
+.blog_text h2 {
+	font-size: 26px;
+	padding-top: 35px;
+	padding-bottom: 4px;
+}
+
+.blog_info span {
+	margin-right: 20px;
+	color: #666;
+	font-size: 13px;
+	font-weight: 400;
+	
+}
+
+.blog_info span a{
+	color: #f26957;
+}
+
+.blog_text p{
+	padding-top: 18px;
+	font-size: 14px;
+	color: #666;
+	border-bottom: 1px solid #dddddd;
+    padding-bottom: 30px;
+	
+}
+
+.blog_link a{
+	font-size: 13px;
+	font-weight: 700;
+	color: #222;
+}
+
+
+/*=========================================
+ 08.OUR LATEST NEWS DESIGN AREA CSS END
+===========================================*/
+
+
+
+/*=========================
+ 09.FOOTER AREA CSS START
+===========================*/
+.footer_top{
+ background: #222222;
+}
+
+.foot_text p {
+	color: #bdbdbd;
+	font-size: 14px;
+	padding-top: 35px;
+}
+
+.foot_link {
+	padding-top: 15px;
+	padding-bottom: 112px;
+}
+
+.foot_link span a {
+	color: #e3e3e3;
+	background: #353333;
+	border-radius: 50%;
+	padding: 9px 14px;
+	font-size: 15px;
+	font-weight: 400;
+	transition: all .3s linear;
+}
+
+.foot_link span a:hover{
+ color: #fefefe;
+ background: #f26957;
+} 
+
+.footer_post{
+/* background: #1aa2b4;*/
+}
+
+.post_hedding h3{
+ font-size: 19px;
+ color: #fff;
+}
+
+.post_text p {
+ font-size: 14px;
+ color: #bdbdbd;
+}
+
+.post_text span{
+ font-size: 13px;
+ color: #6d6d6d;
+}
+
+.sub_heading h3{
+ font-size: 19px;
+ color: #fff;
+}
+
+.sub_text {
+	padding-top: 40px;
+	padding-bottom: 25px;
+}
+
+.sub_text p{
+ font-size: 14px;
+ color: #bdbdbd;
+}
+
+.footer_input{
+ position: relative;
+ 
+}
+
+.footer_input input {
+	width: 100%;
+	display: block;
+	border: 1px solid #fff;
+	padding: 15px;
+	background: #3f3f3f;
+	border: 0;
+	font-size: 12px;
+	color: #b6b6b6;
+}
+
+.footer_input button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	border: 0;
+	padding: 12px 20px;
+	border-left: 2px solid #575757;
+	background: #3f3f3f;
+ font-size: 14px;
+ color: #b6b6b6;
+}
+
+
+
+/*COPYRIGHT-AREA*/
+
+.footer_copyright{
+ background: #2e2e2e;
+}
+
+.copy_text {
+ padding: 34px 0;
+}
+
+.copy_text span{
+ font-size: 14px;
+ font-weight: 400;
+ color: #bdbdbd;
+}
+
+.copy_menu {}
+
+.copy_menu ul {
+ text-align: right;
+}
+
+.copy_menu ul li {
+ display: inline-block;
+ padding-left: 11px;
+ 
+}
+
+.copy_menu ul li a{
+ padding: 34px 0;
+ font-size: 14px;
+ font-weight: 400;
+ color: #bdbdbd;
+ transition: all .3s linear;
+}
+
+
+
+
+/*=========================
+ 09.FOOTER AREA CSS END
+===========================*/
+
+/*STICKY MENU*/
+
+.main_menu{
+	transition: all .3s linear;
+}
+
+.main_menu.sticky {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, .7);
+    animation: stickyani 3s;
+}
+
+
+@keyframes stickyani{
+	from{
+		transform: translateY(-100%);
+	}
+	to{
+		transform: translateY(0%);
+	}
+	
+	
+}
+
+
+
+
+
